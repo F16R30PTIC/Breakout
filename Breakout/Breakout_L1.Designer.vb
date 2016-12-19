@@ -171,6 +171,8 @@ Partial Class Breakout_L1
         Me.life1 = New System.Windows.Forms.PictureBox()
         Me.dropHeart = New System.Windows.Forms.PictureBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.A1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -283,6 +285,7 @@ Partial Class Breakout_L1
         CType(Me.life3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.life1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dropHeart, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -305,13 +308,13 @@ Partial Class Breakout_L1
         'mnuSettings
         '
         Me.mnuSettings.Name = "mnuSettings"
-        Me.mnuSettings.Size = New System.Drawing.Size(152, 22)
+        Me.mnuSettings.Size = New System.Drawing.Size(126, 22)
         Me.mnuSettings.Text = "&Settings"
         '
         'mnuQuit
         '
         Me.mnuQuit.Name = "mnuQuit"
-        Me.mnuQuit.Size = New System.Drawing.Size(152, 22)
+        Me.mnuQuit.Size = New System.Drawing.Size(126, 22)
         Me.mnuQuit.Text = "&Quit"
         '
         'ViewToolStripMenuItem
@@ -1656,6 +1659,29 @@ Partial Class Breakout_L1
         Me.Label14.Text = "Heart"
         Me.Label14.Visible = False
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(114, 421)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(29, 13)
+        Me.Label15.TabIndex = 266
+        Me.Label15.Text = "Multi"
+        Me.Label15.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(119, 437)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(18, 16)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 265
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'Breakout_L1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1663,6 +1689,8 @@ Partial Class Breakout_L1
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.CancelButton = Me.btnEsc
         Me.ClientSize = New System.Drawing.Size(910, 465)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.dropHeart)
         Me.Controls.Add(Me.picEsc)
@@ -1918,6 +1946,7 @@ Partial Class Breakout_L1
         CType(Me.life3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.life1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dropHeart, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2070,4 +2099,6 @@ Partial Class Breakout_L1
     Friend WithEvents life1 As PictureBox
     Friend WithEvents dropHeart As PictureBox
     Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
