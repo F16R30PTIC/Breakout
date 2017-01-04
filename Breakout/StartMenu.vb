@@ -13,7 +13,6 @@
             lblDivider.Visible = True
             picLogo.Visible = True
         End If
-
     End Sub
     Private Sub Buttons_Tick(sender As Object, e As EventArgs) Handles Buttons.Tick
         If Not btnNew.Visible Then

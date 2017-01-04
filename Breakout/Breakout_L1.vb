@@ -1,4 +1,5 @@
-﻿Public Class Breakout_L1
+﻿'Option Strict On
+Public Class Breakout_L1
     Dim ballMovex As Integer
     Dim ballMovey As Integer = 10
     'Amount the paddle moves
@@ -9,6 +10,7 @@
     Dim shot As Boolean = False
     'The randomly selected item that is dropped on 30' interval
     Dim dropItem As PictureBox
+    'Number of lives (duh)
     Dim lives As Integer = 6
     'When 'Quit' is selected in File menu
     Private Sub mnuQuit_Click(sender As Object, e As EventArgs) Handles mnuQuit.Click
